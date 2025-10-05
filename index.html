@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HueCraft - Color Palette Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 HueCraft</h1>
+            <p>Create beautiful color palettes with ease</p>
+        </header>
+
+        <main>
+            <div class="palette-container">
+                <div class="color-block" data-index="0">
+                    <div class="color-display"></div>
+                    <div class="color-info">
+                        <span class="hex-code">#FFFFFF</span>
+                        <button class="lock-btn" aria-label="Lock color">🔓</button>
+                    </div>
+                </div>
+                <div class="color-block" data-index="1">
+                    <div class="color-display"></div>
+                    <div class="color-info">
+                        <span class="hex-code">#FFFFFF</span>
+                        <button class="lock-btn" aria-label="Lock color">🔓</button>
+                    </div>
+                </div>
+                <div class="color-block" data-index="2">
+                    <div class="color-display"></div>
+                    <div class="color-info">
+                        <span class="hex-code">#FFFFFF</span>
+                        <button class="lock-btn" aria-label="Lock color">🔓</button>
+                    </div>
+                </div>
+                <div class="color-block" data-index="3">
+                    <div class="color-display"></div>
+                    <div class="color-info">
+                        <span class="hex-code">#FFFFFF</span>
+                        <button class="lock-btn" aria-label="Lock color">🔓</button>
+                    </div>
+                </div>
+                <div class="color-block" data-index="4">
+                    <div class="color-display"></div>
+                    <div class="color-info">
+                        <span class="hex-code">#FFFFFF</span>
+                        <button class="lock-btn" aria-label="Lock color">🔓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-info">
+                <div class="palette-type" id="paletteType">Premium Palette</div>
+            </div>
+
+            <div class="controls">
+                <button id="generateBtn" class="btn btn-primary">Generate Palette</button>
+                <button id="savePaletteBtn" class="btn btn-secondary">Save Palette</button>
+                <div class="file-input-container">
+                    <input type="file" id="imageUpload" accept="image/*" hidden>
+                    <button id="uploadBtn" class="btn btn-secondary">Extract from Image</button>
+                </div>
+                <button id="exportBtn" class="btn btn-secondary">Export PNG</button>
+            </div>
+
+            <!-- Tooltip for copy feedback -->
+            <div id="tooltip" class="tooltip">Copied!</div>
+        </main>
+
+        <section class="saved-palettes">
+            <h2>Saved Palettes</h2>
+            <div class="saved-list" id="savedList">
+                <p class="empty-state">No saved palettes yet. Generate and save your first palette!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
